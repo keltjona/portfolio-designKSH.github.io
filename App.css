@@ -1,0 +1,398 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(255, 148, 219);
+}
+
+.nav-link {
+  margin-left: 30px;
+  color:rgb(255, 148, 219);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: purple;
+}
+
+.social-links {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(135, 36, 135);
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  padding: 100px 20px;
+  background-color: #040404d5;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color:rgb(255, 148, 219);
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color:#fff
+}
+
+.hero-image{
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-image img {
+  width: 50%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 450%;
+}
+
+/* About Section */
+.about {
+  padding: 50px 20px;
+  background-color: rgb(0, 0, 0);
+}
+
+.about-image img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about h2 {
+  font-size: 28px;
+  color: rgb(255, 148, 219);
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #fff
+}
+
+/* Services Section */
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: #040404d5;
+}
+
+.service {
+  background: rgb(197, 195, 195);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-header {
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: purple;
+}
+
+.service p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.service strong {
+  color: purple;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design: Adjust for smaller screens */
+@media (max-width: 768px) {
+  .services {
+    grid-template-columns: 1fr; /* Stack columns vertically */
+  }
+}
+
+
+
+/* Portfolio Section */
+.portfolio {
+  padding: 50px 20px;
+  background-color: black; /* Set background color to black */
+  color: white; /* Set default text color to white */
+}
+
+.portfolio h2 {
+  color:rgb(255, 148, 219);
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+
+
+.portfolio-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.portfolio-item {
+  width: 30%;
+  height: 150px;
+  background-color: #f5f5f5;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: purple;
+}
+
+.portfolio-item:hover {
+  background-color: #f3b1d9;
+  transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background-color:  #040404d5;
+  color: #ffbfec;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color:rgb(255, 148, 219);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact .contact-image {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact .contact-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 250px;
+  border-radius: 8px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  max-width: 600px;
+  background-color: #544f4f40;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact form .form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact form label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #362cee;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact form textarea {
+  resize: vertical;
+}
+
+.contact .submit-btn {
+  background-color: #b168f6;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.contact .submit-btn:hover {
+  background-color: #6a1dad;
+}
+
+.contact p {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 20px;
+  color: #4caf50; /* Green for success messages */
+}
+
+.contact p.error {
+  color: #f44336; /* Red for error messages */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .contact {
+    padding: 40px 20px;
+  }
+
+  .contact .contact-image {
+    margin-bottom: 20px;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact form {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact .submit-btn {
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+}
+
+
+/* Status Message */
+.contact p {
+  text-align: center;
+  font-size: 1rem;
+  color: green;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #000000;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+
+
+
+/* Responsive Design: Adjust for smaller screens */
+@media (max-width: 768px) {
+  .services {
+    grid-template-columns: 1fr; /* Stack columns vertically */
+  }
+
+  .portfolio-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-item {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .about-image img {
+    width: 80%; /* Make image take more space on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 22px; /* Smaller logo for mobile */
+  }
+
+  .hero h1 {
+    font-size: 24px; /* Smaller heading */
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .service h3 {
+    font-size: 18px;
+  }
+
+  .social-links a {
+    margin: 0 8px;
+  }
+}
+
